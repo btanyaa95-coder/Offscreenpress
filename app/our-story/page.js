@@ -35,9 +35,9 @@ export default function OurStory() {
     <>
       <section className="section top">
         <div className="wrap tight">
-          <p className="label c-terra">Our story</p>
+          <p className="label c-accent">Our story</p>
           <h1 className="dxl" style={{ maxWidth: 1000 }}>We believe life is more fun offscreen.</h1>
-          <p className="el c-terra">A little escape from the scroll.</p>
+          <p className="el c-accent">A little escape from the scroll.</p>
         </div>
       </section>
 
@@ -49,7 +49,7 @@ export default function OurStory() {
               {letter.map((p) => (
                 <p key={p} className="em">{p}</p>
               ))}
-              <p className="hand c-terra">On paper. Off screen. — the Offscreen Press team</p>
+              <p className="hand c-accent">On paper. Off screen. — the Offscreen Press team</p>
             </div>
           </div>
         </div>
@@ -58,11 +58,11 @@ export default function OurStory() {
       <section className="section">
         <div className="wrap">
           <div className="grid two">
-            <div className="card big" style={{ background: "var(--terra)" }}>
+            <div className="card big" style={{ background: "var(--accent)" }}>
               <p className="label c-parch">Our mission</p>
               <p className="dl">To bring the joy of paper-based play back into everyday life.</p>
             </div>
-            <div className="card big" style={{ background: "var(--teal)" }}>
+            <div className="card big" style={{ background: "var(--rose)" }}>
               <p className="label c-parch">Our vision</p>
               <p className="dl">To make analog play desirable, collectible and part of modern life.</p>
             </div>

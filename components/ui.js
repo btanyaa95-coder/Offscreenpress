@@ -42,7 +42,7 @@ export function Cover({ n, className = "", tagline = true }) {
 export function Heading({ label, title, as: Tag = "h2", light = false, max }) {
   return (
     <div className="heading">
-      <p className={`label ${light ? "c-parch" : "c-terra"}`}>{label}</p>
+      <p className={`label ${light ? "c-parch" : "c-accent"}`}>{label}</p>
       <Tag className="dl" style={max ? { maxWidth: max } : undefined}>
         {title}
       </Tag>

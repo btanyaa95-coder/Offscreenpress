@@ -67,9 +67,9 @@ export default function LatestIssue() {
               </div>
             </div>
             <div className="stack">
-              <p className="label c-terra">Issue No. 01 · The Diwali Edition</p>
+              <p className="label c-accent">Issue No. 01 · The Diwali Edition</p>
               <h1 className="dxl">The Festive Bazaar</h1>
-              <p className="el c-terra">
+              <p className="el c-accent">
                 The lamps are lit, the shutters are up and the whole street smells of something frying.
               </p>
               <p className="em">
@@ -81,7 +81,7 @@ export default function LatestIssue() {
               <div className="order">
                 <div className="row">
                   <span className="label">Single edition</span>
-                  <span className="label c-terra">Price announced at launch</span>
+                  <span className="label c-accent">Price announced at launch</span>
                 </div>
                 <h2 className="dm">Ordering opens soon.</h2>
                 <p>
@@ -118,14 +118,14 @@ export default function LatestIssue() {
           <div className="list">
             {activities.map(([t, d], i) => (
               <div key={t}>
-                <span className="label c-terra">{String(i + 1).padStart(2, "0")}</span>
+                <span className="label c-accent">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="dm">{t}</h3>
                 <p>{d}</p>
               </div>
             ))}
           </div>
           <div className="stack" style={{ gap: 16 }}>
-            <p className="label c-terra">The editorial mix (roughly)</p>
+            <p className="label c-accent">The editorial mix (roughly)</p>
             <div className="grid" style={{ "--min": "220px", gap: 16 }}>
               {mix.map(([p, t, bg]) => (
                 <div key={t} className="card" style={{ background: bg, gap: 4, padding: "18px 20px 20px" }}>
@@ -138,7 +138,7 @@ export default function LatestIssue() {
         </div>
       </section>
 
-      <section className="section bg-terra">
+      <section className="section bg-accent">
         <div className="wrap">
           <div className="split">
             <div className="stack" style={{ gap: 24 }}>
@@ -146,7 +146,7 @@ export default function LatestIssue() {
               <div className="table">
                 {specs.map(([k, v]) => (
                   <div key={k}>
-                    <span className="label c-terra">{k}</span>
+                    <span className="label c-accent">{k}</span>
                     <span>{v}</span>
                   </div>
                 ))}
@@ -192,7 +192,7 @@ export default function LatestIssue() {
             {issues.slice(1, 4).map((issue, i) => (
               <Link key={issue.n} href="/archive" className="lift" style={{ "--tilt-hover": i % 2 ? "-1deg" : "1deg" }}>
                 <Cover n={issue.n} />
-                <span className="label c-terra">{issueNo(issue.n)}</span>
+                <span className="label c-accent">{issueNo(issue.n)}</span>
                 <span className="dm">{issue.title}</span>
               </Link>
             ))}

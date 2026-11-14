@@ -43,9 +43,9 @@ export default function Home() {
         <div className="wrap">
           <div className="split middle">
             <div className="hero-copy">
-              <p className="label c-terra">A monthly paper adventure · Issue No. 01</p>
+              <p className="label c-accent">A monthly paper adventure · Issue No. 01</p>
               <h1 className="dxl">Your screen can wait.</h1>
-              <p className="el c-terra">There’s fun on paper.</p>
+              <p className="el c-accent">There’s fun on paper.</p>
               <p className="em">
                 A monthly collection of puzzles, games and little adventures. Made for curious minds, slow afternoons
                 and anyone who remembers how fun doing nothing used to be.
@@ -63,7 +63,7 @@ export default function Home() {
                 <span className="label">Issue</span>
                 <b>01</b>
               </div>
-              <p className="hand c-terra">psst… ten things are hiding in this bazaar</p>
+              <p className="hand c-accent">psst… ten things are hiding in this bazaar</p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section bg-terra">
+      <section className="section bg-accent">
         <div className="wrap">
           <Heading label="The latest issue" title="A new world. Every month." light />
           <div className="split">
@@ -112,7 +112,7 @@ export default function Home() {
               <div className="specs">
                 {specs.map(([k, v]) => (
                   <div key={k}>
-                    <span className="label c-terra">{k}</span>
+                    <span className="label c-accent">{k}</span>
                     <span>{v}</span>
                   </div>
                 ))}
@@ -153,13 +153,13 @@ export default function Home() {
         <div className="wrap">
           <div className="split middle">
             <div className="stack">
-              <p className="label c-terra">Why Offscreen?</p>
+              <p className="label c-accent">Why Offscreen?</p>
               <h2 className="dl">Remember when you didn’t need a screen to have fun?</h2>
               <p className="em">When a pencil and a piece of paper could keep you occupied for hours.</p>
               <p className="em">When solving a maze felt like an adventure.</p>
               <p className="em">When a rainy afternoon meant paper boats, doodles and games.</p>
               <p className="em">We miss that feeling. So we decided to bring a little of it back.</p>
-              <p className="el c-terra">Welcome to Offscreen Press.</p>
+              <p className="el c-accent">Welcome to Offscreen Press.</p>
               <div className="row">
                 <Button href="/our-story" variant="sec">Read our story</Button>
               </div>
@@ -182,7 +182,7 @@ export default function Home() {
             {issues.map((issue, i) => (
               <Link key={issue.n} href={issue.href || "/archive"} className="lift" style={{ "--tilt-hover": i % 2 ? "1.5deg" : "-1.5deg" }}>
                 <Cover n={issue.n} className="sm" />
-                <span className="label c-terra" style={{ paddingTop: 6 }}>{issueNo(issue.n)}</span>
+                <span className="label c-accent" style={{ paddingTop: 6 }}>{issueNo(issue.n)}</span>
                 <span>{issue.title}</span>
                 <span className="label" style={{ fontSize: 11 }}>{issue.status}</span>
               </Link>

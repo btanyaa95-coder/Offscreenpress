@@ -21,12 +21,12 @@ function Edition({ issue }) {
     <>
       <Cover n={issue.n} />
       <div className="meta">
-        <span className="label c-terra">{issueNo(issue.n)}</span>
+        <span className="label c-accent">{issueNo(issue.n)}</span>
         <span className="pill" style={issue.n === 1 ? { background: "var(--mustard)" } : undefined}>{issue.status}</span>
       </div>
       <h2 className="dm">{issue.title}</h2>
       <p>{issue.world}</p>
-      {issue.href && <span className="label c-terra">View edition</span>}
+      {issue.href && <span className="label c-accent">View edition</span>}
     </>
   );
 }
@@ -36,7 +36,7 @@ export default function Archive() {
     <>
       <section className="section top">
         <div className="wrap tight">
-          <p className="label c-terra">Every edition, worth collecting</p>
+          <p className="label c-accent">Every edition, worth collecting</p>
           <h1 className="dxl">The Offscreen Archive.</h1>
           <p className="em" style={{ maxWidth: 720 }}>
             A growing library of paper worlds. Every edition keeps its place on this shelf, even after the last copy
